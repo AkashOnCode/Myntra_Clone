@@ -28,7 +28,7 @@ The goal of this project was to practice building a static website layout that l
 
 ## 📸 Preview
 
-![Myntra Clone Preview](./images/preview/image.png) 
+![Myntra Clone Preview](./Images/preview/image.png) 
 
 ## 📁 Folder Structure
 
@@ -42,11 +42,11 @@ Myntra_Clone/
 └── Categories
 └── Logo
 └── Offers
-└── Preview![alt text](image.png)
+└── Preview![Myntra_clone Image](./Images/preview/image.png)
 
 ## 🌐 Live Demo
 
-[Click here to view the live site](https://AkashOnCode.github.io/myntra-clone/) 
+[Click here to view the live site](https://akashoncode.github.io/Myntra_Clone/) 
 
 ---
 
@@ -55,4 +55,4 @@ Myntra_Clone/
 If you liked this project, connect with me:
 
 - GitHub: [@AkashOnCode](https://github.com/AkashOnCode)
-- LinkedIn: [Aakash Full Stack Web Developer ](www.linkedin.com/in/aakash-full-stack-web-developer)
+- LinkedIn: [@Aakash Full Stack Web Developer ](linkedin.com/in/aakash-full-stack-web-developer)
