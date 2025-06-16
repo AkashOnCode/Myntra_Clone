@@ -54,5 +54,5 @@ Myntra_Clone/
 
 If you liked this project, connect with me:
 
-- GitHub: [@AkashOnCode](https://github.com/AkashOnCode)
-- LinkedIn: [@Aakash Full Stack Web Developer ](linkedin.com/in/aakash-full-stack-web-developer)
+- GitHub: [Connect with me on Github](https://github.com/AkashOnCode)
+- LinkedIn: [Connect with me on LinkedIn](https://www.linkedin.com/in/aakash-full-stack-web-developer)
