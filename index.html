@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>myntra.clone</title>
-    
+
     <!-- Google Material Icons stylesheet -->
     <link
       rel="stylesheet"
@@ -13,136 +13,231 @@
     <!-- Custom CSS stylesheet -->
     <link rel="stylesheet" href="./style.css" />
   </head>
-  
+
   <body>
-    <!-- Header section containing logo, navigation, search and action items -->
     <header>
-      <!-- Logo container -->
-      <div class="logo_container">
-        <a href="#"><img class="myntra_home" src="./Images/logo/myntra_logo.webp" alt="Myntra Logo"/></a>
-      </div>
-      
-      <!-- Main navigation bar -->
-      <nav class="nav_bar">
-        <a href="#">MEN</a>
-        <a href="#">WOMEN</a>
-        <a href="#">KIDS</a>
-        <a href="#">HOME & LIVING</a>
-        <a href="#">BEAUTY</a>
-        <a href="#">STUDIO <sup>NEW</sup></a>
-      </nav>
+  <!-- Logo container -->
+  <div class="logo_container">
+    <a href="#"><img class="myntra_home" src="./Images/logo/myntra_logo.webp" alt="Myntra Logo"/></a>
+  </div>
+  
+  <!-- Mobile menu button (hamburger icon) -->
+  <div class="mobile_menu_btn">
+    <span class="material-symbols-outlined">menu</span>
+  </div>
 
-      <!-- Search bar section -->
-      <div class="search_bar">
-        <span class="material-symbols-outlined search_icon">search</span>
-        <input
-          class="search_input"
-          placeholder="Search for products, brands and more"
-        />
-      </div>
+  <!-- Main navigation bar -->
+  <nav class="nav_bar">
+    <a href="#">MEN</a>
+    <a href="#">WOMEN</a>
+    <a href="#">KIDS</a>
+    <a href="#">HOME & LIVING</a>
+    <a href="#">BEAUTY</a>
+    <a href="#">STUDIO <sup>NEW</sup></a>
+  </nav>
 
-      <!-- Action items (profile, wishlist, bag) -->
-      <div class="action_container">
-        <span class="material-symbols-outlined">person</span>
-        <span>profile</span>
-      </div>
+  <!-- Search bar section -->
+  <div class="search_bar">
+    <span class="material-symbols-outlined search_icon">search</span>
+    <input
+      class="search_input"
+      placeholder="Search for products, brands and more"
+    />
+  </div>
 
-      <div class="action_container">
-        <span class="material-symbols-outlined">favorite</span>
-        <span>wishlist</span>
-      </div>
+  <!-- Action items (profile, wishlist, bag) - Now with mobile specific classes -->
+  <div class="action_bar">
+    <div class="action_container profile_container">
+      <span class="material-symbols-outlined">person</span>
+      <span class="action_label">Profile</span>
+    </div>
 
-      <div class="action_container">
-        <span class="material-symbols-outlined">shopping_bag</span>
-        <span>bag</span>
-      </div>
-    </header>
-    
+    <div class="action_container wishlist_container">
+      <span class="material-symbols-outlined">favorite</span>
+      <span class="action_label">Wishlist</span>
+    </div>
+
+    <div class="action_container bag_container">
+      <span class="material-symbols-outlined">shopping_bag</span>
+      <span class="action_label">Bag</span>
+      <!-- <span class="bag_count">0</span> -->
+    </div>
+  </div>
+</header>
+
     <!-- Main content section -->
     <main>
       <!-- Banner section -->
       <div class="banner_container">
-        <img class="banner_image" src="./Images/banner/banner.jpg" alt="banner" />
+        <img
+          class="banner_image"
+          src="./Images/banner/banner.jpg"
+          alt="banner"
+        />
       </div>
-      
+
       <!-- Grand Global Brands section -->
       <div class="categroies_heading">Grand Global Brands</div>
       <div class="categroies_items">
-        <a href="#"><img class="image_items" src="./Images/offers/1.png" alt="Brand 1"/></a>
-        <a href="#"><img class="image_items" src="./Images/offers/2.png" alt="Brand 2"/></a>
-        <a href="#"><img class="image_items" src="./Images/offers/3.png" alt="Brand 3"/></a>
-        <a href="#"><img class="image_items" src="./Images/offers/4.png" alt="Brand 4"/></a>
-        <a href="#"><img class="image_items" src="./Images/offers/5.png" alt="Brand 5"/></a>
-        <a href="#"><img class="image_items" src="./Images/offers/6.png" alt="Brand 6"/></a>
-        <a href="#"><img class="image_items" src="./Images/offers/7.png" alt="Brand 7"/></a>
-        <a href="#"><img class="image_items" src="./Images/offers/8.png" alt="Brand 8"/></a>
-        <a href="#"><img class="image_items" src="./Images/offers/9.png" alt="Brand 9"/></a>
-        <a href="#"><img class="image_items" src="./Images/offers/10.png" alt="Brand 10"/></a>
-        <a href="#"><img class="image_items" src="./Images/offers/11.png" alt="Brand 11"/></a>
-        <a href="#"><img class="image_items" src="./Images/offers/12.png" alt="Brand 12"/></a>
+        <a href="#"
+          ><img class="image_items" src="./Images/offers/1.png" alt="Brand 1"
+        /></a>
+        <a href="#"
+          ><img class="image_items" src="./Images/offers/2.png" alt="Brand 2"
+        /></a>
+        <a href="#"
+          ><img class="image_items" src="./Images/offers/3.png" alt="Brand 3"
+        /></a>
+        <a href="#"
+          ><img class="image_items" src="./Images/offers/4.png" alt="Brand 4"
+        /></a>
+        <a href="#"
+          ><img class="image_items" src="./Images/offers/5.png" alt="Brand 5"
+        /></a>
+        <a href="#"
+          ><img class="image_items" src="./Images/offers/6.png" alt="Brand 6"
+        /></a>
+        <a href="#"
+          ><img class="image_items" src="./Images/offers/7.png" alt="Brand 7"
+        /></a>
+        <a href="#"
+          ><img class="image_items" src="./Images/offers/8.png" alt="Brand 8"
+        /></a>
+        <a href="#"
+          ><img class="image_items" src="./Images/offers/9.png" alt="Brand 9"
+        /></a>
+        <a href="#"
+          ><img class="image_items" src="./Images/offers/10.png" alt="Brand 10"
+        /></a>
+        <a href="#"
+          ><img class="image_items" src="./Images/offers/11.png" alt="Brand 11"
+        /></a>
+        <a href="#"
+          ><img class="image_items" src="./Images/offers/12.png" alt="Brand 12"
+        /></a>
       </div>
 
       <!-- Shop By Category section -->
       <div class="categroies_heading">Shop By Category</div>
       <div class="categroies_items">
-        <a href="#"><img class="image_items" src="./Images/categories/1.jpg" alt="Category 1"/></a>
-        <a href="#"><img class="image_items" src="./Images/categories/2.jpg" alt="Category 2"/></a>
-        <a href="#"><img class="image_items" src="./Images/categories/3.jpg" alt="Category 3"/></a>
-        <a href="#"><img class="image_items" src="./Images/categories/4.jpg" alt="Category 4"/></a>
-        <a href="#"><img class="image_items" src="./Images/categories/5.jpg" alt="Category 5"/></a>
-        <a href="#"><img class="image_items" src="./Images/categories/6.jpg" alt="Category 6"/></a>
-        <a href="#"><img class="image_items" src="./Images/categories/7.jpg" alt="Category 7"/></a>
-        <a href="#"><img class="image_items" src="./Images/categories/8.jpg" alt="Category 8"/></a>
-        <a href="#"><img class="image_items" src="./Images/categories/9.jpg" alt="Category 9"/></a>
-        <a href="#"><img class="image_items" src="./Images/categories/10.jpg" alt="Category 10"/></a>
+        <a href="#"
+          ><img
+            class="image_items"
+            src="./Images/categories/1.jpg"
+            alt="Category 1"
+        /></a>
+        <a href="#"
+          ><img
+            class="image_items"
+            src="./Images/categories/2.jpg"
+            alt="Category 2"
+        /></a>
+        <a href="#"
+          ><img
+            class="image_items"
+            src="./Images/categories/3.jpg"
+            alt="Category 3"
+        /></a>
+        <a href="#"
+          ><img
+            class="image_items"
+            src="./Images/categories/4.jpg"
+            alt="Category 4"
+        /></a>
+        <a href="#"
+          ><img
+            class="image_items"
+            src="./Images/categories/5.jpg"
+            alt="Category 5"
+        /></a>
+        <a href="#"
+          ><img
+            class="image_items"
+            src="./Images/categories/6.jpg"
+            alt="Category 6"
+        /></a>
+        <a href="#"
+          ><img
+            class="image_items"
+            src="./Images/categories/7.jpg"
+            alt="Category 7"
+        /></a>
+        <a href="#"
+          ><img
+            class="image_items"
+            src="./Images/categories/8.jpg"
+            alt="Category 8"
+        /></a>
+        <a href="#"
+          ><img
+            class="image_items"
+            src="./Images/categories/9.jpg"
+            alt="Category 9"
+        /></a>
+        <a href="#"
+          ><img
+            class="image_items"
+            src="./Images/categories/10.jpg"
+            alt="Category 10"
+        /></a>
       </div>
     </main>
-    
+
     <!-- Footer section -->
     <footer>
       <div class="footer_container">
-          <!-- First footer column -->
-          <div class="footer_column">
-              <h3>ONLINE SHOPPING</h3>
-              <a href="#">Men</a>
-              <a href="#">Women</a>
-              <a href="#">Kids</a>
-              <a href="#">Home & Living</a>
-              <a href="#">Beauty</a>
-              <a href="#">Gift Card</a>
-              <a href="#">Myntra Insider</a>
-          </div>
+        <!-- First footer column -->
+        <div class="footer_column">
+          <h3>ONLINE SHOPPING</h3>
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">Kids</a>
+          <a href="#">Home & Living</a>
+          <a href="#">Beauty</a>
+          <a href="#">Gift Card</a>
+          <a href="#">Myntra Insider</a>
+        </div>
 
-          <!-- Second footer column -->
-          <div class="footer_column">
-              <h3>ONLINE SHOPPING</h3>
-              <a href="#">Men</a>
-              <a href="#">Women</a>
-              <a href="#">Kids</a>
-              <a href="#">Home & Living</a>
-              <a href="#">Beauty</a>
-              <a href="#">Gift Card</a>
-              <a href="#">Myntra Insider</a>
-          </div>
+        <!-- Second footer column -->
+        <div class="footer_column">
+          <h3>ONLINE SHOPPING</h3>
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">Kids</a>
+          <a href="#">Home & Living</a>
+          <a href="#">Beauty</a>
+          <a href="#">Gift Card</a>
+          <a href="#">Myntra Insider</a>
+        </div>
 
-          <!-- Third footer column -->
-          <div class="footer_column">
-              <h3>ONLINE SHOPPING</h3>
-              <a href="#">Men</a>
-              <a href="#">Women</a>
-              <a href="#">Kids</a>
-              <a href="#">Home & Living</a>
-              <a href="#">Beauty</a>
-              <a href="#">Gift Card</a>
-              <a href="#">Myntra Insider</a>
-          </div>
+        <!-- Third footer column -->
+        <div class="footer_column">
+          <h3>ONLINE SHOPPING</h3>
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">Kids</a>
+          <a href="#">Home & Living</a>
+          <a href="#">Beauty</a>
+          <a href="#">Gift Card</a>
+          <a href="#">Myntra Insider</a>
+        </div>
       </div>
-      <hr>
+      <hr />
 
       <!-- Copyright notice -->
-      <div class="copyright">
-          © 2025 www.myntra.com. All rights reserved.
-      </div>
+      <div class="copyright">© 2025 www.myntra.com. All rights reserved.</div>
     </footer>
+
+    <script>
+      document
+        .querySelector(".mobile_menu_btn")
+        .addEventListener("click", function () {
+          const navBar = document.querySelector(".nav_bar");
+          const searchBar = document.querySelector(".search_bar");
+
+          navBar.classList.toggle("active");
+          searchBar.classList.toggle("active");
+        });
+    </script>
   </body>
 </html>
