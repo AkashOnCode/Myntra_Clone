@@ -183,60 +183,76 @@
       </div>
     </main>
 
-    <!-- Footer section -->
+    <!-- FOOTER SECTION -->
     <footer>
-      <div class="footer_container">
-        <!-- First footer column -->
-        <div class="footer_column">
-          <h3>ONLINE SHOPPING</h3>
-          <a href="#">Men</a>
-          <a href="#">Women</a>
-          <a href="#">Kids</a>
-          <a href="#">Home & Living</a>
-          <a href="#">Beauty</a>
-          <a href="#">Gift Card</a>
-          <a href="#">Myntra Insider</a>
+        <div class="footer_container">
+            <div class="footer_column">
+                <h3>Online Shopping</h3>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Home & Living</a>
+                <a href="#">Beauty</a>
+                <a href="#">Gift Cards</a>
+            </div>
+            
+            <div class="footer_column">
+                <h3>Useful Links</h3>
+                <a href="#">Contact Us</a>
+                <a href="#">FAQ</a>
+                <a href="#">T&C</a>
+                <a href="#">Terms Of Use</a>
+                <a href="#">Track Orders</a>
+                <a href="#">Shipping</a>
+            </div>
+            
+            <div class="footer_column">
+                <h3>Experience Myntra App</h3>
+                <a href="#">Android App</a>
+                <a href="#">iOS App</a>
+                <a href="#">Myntra Insider</a>
+                <h3 style="margin-top: 15px;">Keep In Touch</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            
+            <div class="footer_column">
+                <h3>Popular Searches</h3>
+                <a href="#">Makeup</a>
+                <a href="#">Dresses For Girls</a>
+                <a href="#">T-Shirts</a>
+                <a href="#">Sandals</a>
+                <a href="#">Headphones</a>
+                <a href="#">Babydolls</a>
+            </div>
         </div>
-
-        <!-- Second footer column -->
-        <div class="footer_column">
-          <h3>ONLINE SHOPPING</h3>
-          <a href="#">Men</a>
-          <a href="#">Women</a>
-          <a href="#">Kids</a>
-          <a href="#">Home & Living</a>
-          <a href="#">Beauty</a>
-          <a href="#">Gift Card</a>
-          <a href="#">Myntra Insider</a>
+        
+        <hr>
+        
+        <div class="copyright">
+            © 2025 www.myntra.com. All rights reserved.
         </div>
-
-        <!-- Third footer column -->
-        <div class="footer_column">
-          <h3>ONLINE SHOPPING</h3>
-          <a href="#">Men</a>
-          <a href="#">Women</a>
-          <a href="#">Kids</a>
-          <a href="#">Home & Living</a>
-          <a href="#">Beauty</a>
-          <a href="#">Gift Card</a>
-          <a href="#">Myntra Insider</a>
-        </div>
-      </div>
-      <hr />
-
-      <!-- Copyright notice -->
-      <div class="copyright">© 2025 www.myntra.com. All rights reserved.</div>
     </footer>
-
     <script>
-      document
-        .querySelector(".mobile_menu_btn")
-        .addEventListener("click", function () {
-          const navBar = document.querySelector(".nav_bar");
-          const searchBar = document.querySelector(".search_bar");
-
-          navBar.classList.toggle("active");
-          searchBar.classList.toggle("active");
+        // Mobile Menu Toggle Functionality
+        document.querySelector('.mobile_menu_btn').addEventListener('click', function() {
+            const navBar = document.querySelector('.nav_bar');
+            const searchBar = document.querySelector('.search_bar');
+            
+            navBar.classList.toggle('active');
+            searchBar.classList.toggle('active');
+            
+            // Close menu when clicking outside
+            if (navBar.classList.contains('active')) {
+                document.addEventListener('click', function closeMenu(e) {
+                    if (!e.target.closest('.mobile_menu_btn') && !e.target.closest('.nav_bar')) {
+                        navBar.classList.remove('active');
+                        searchBar.classList.remove('active');
+                        document.removeEventListener('click', closeMenu);
+                    }
+                });
+            }
         });
     </script>
   </body>
